@@ -22,47 +22,81 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import PageHeader from "components/PageHeader/PageHeader.js";
 import Footer from "components/Footer/Footer.js";
 
-// sections for this page/view
-import Basics from "views/IndexSections/Basics.js";
-import Navbars from "views/IndexSections/Navbars.js";
-import Tabs from "views/IndexSections/Tabs.js";
-import Pagination from "views/IndexSections/Pagination.js";
-import Notifications from "views/IndexSections/Notifications.js";
-import Typography from "views/IndexSections/Typography.js";
-import JavaScript from "views/IndexSections/JavaScript.js";
-import NucleoIcons from "views/IndexSections/NucleoIcons.js";
-import Signup from "views/IndexSections/Signup.js";
-import Examples from "views/IndexSections/Examples.js";
-import Download from "views/IndexSections/Download.js";
+import { Container, Row, Col, UncontrolledCarousel, Button } from "reactstrap";
 
 export default function Index() {
   React.useEffect(() => {
     document.body.classList.toggle("index-page");
-    // Specify how to clean up after this effect:
     return function cleanup() {
       document.body.classList.toggle("index-page");
     };
   }, []);
+
+  const carouselItems = [
+    {
+      src: require("assets/img/denys.jpg"),
+      altText: "Slide 1",
+      caption: "Big City Life, United States",
+    },
+    {
+      src: require("assets/img/fabien-bazanegue.jpg"),
+      altText: "Slide 2",
+      caption: "Somewhere Beyond, United States",
+    },
+    {
+      src: require("assets/img/mark-finn.jpg"),
+      altText: "Slide 3",
+      caption: "Stocks, United States",
+    },
+  ];
+
   return (
     <>
       <IndexNavbar />
       <div className="wrapper">
         <PageHeader />
         <div className="main">
-          <Basics />
-          <Navbars />
-          <Tabs />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <JavaScript />
-          <NucleoIcons />
-          <Signup />
-          <Examples />
-          <Download />
+          
         </div>
-        <Footer />
       </div>
+
+      <div className="section">
+        <Container>
+          <Row className="justify-content-between">
+            <Col md="6">
+              <Row className="justify-content-between align-items-center">
+                <UncontrolledCarousel items={carouselItems} />
+              </Row>
+            </Col>
+            <Col md="5">
+              <h1 className="profile-title text-left">Projects</h1>
+              <h5 className="text-on-back">02</h5>
+              <p className="profile-description text-left">
+                blablabla
+              </p>
+              <div className="btn-wrapper pt-3">
+                <Button
+                  className="btn-simple"
+                  color="primary"
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <i className="tim-icons icon-book-bookmark" /> Bookmark
+                </Button>
+                <Button
+                  className="btn-simple"
+                  color="info"
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <i className="tim-icons icon-bulb-63" /> Check it!
+                </Button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <Footer />
     </>
   );
 }
