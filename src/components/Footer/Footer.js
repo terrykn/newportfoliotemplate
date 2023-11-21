@@ -16,7 +16,6 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container } from "reactstrap";
 
 export default function Footer() {
@@ -25,7 +24,7 @@ export default function Footer() {
       <Container className="text-center">
         <h4>Copyright © Terry Nguyen</h4>
         
-          <a href="https://www.creative-tim.com/product/blk-design-system-react" target="_blank">
+          <a href="https://www.creative-tim.com/product/blk-design-system-react" target="_blank" rel="noreferrer">
             Designed by Creative Tim
           </a>
         

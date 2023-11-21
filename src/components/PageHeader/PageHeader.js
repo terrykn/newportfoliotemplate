@@ -33,7 +33,7 @@ export default function PageHeader() {
         <div className="squares square7" />
         <Container>
           <div className="content-center brand">
-            <h1 className="h1-seo">Hello, I'm Terry 👋🏼</h1>
+            <h1 className="h1-seo">Hi, I'm Terry👋🏼</h1>
             <h3>
               CS & Math - Rutgers University
             </h3>
