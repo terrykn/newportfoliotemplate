@@ -78,7 +78,7 @@ export default function Index() {
               <Col lg="6" md="6">
                 <h1 className="profile-title text-left">Terry Nguyen</h1>
                 <p className="profile-description">
-                  Hello, I'm a Computer Science and Mathematics double-major student at Rutgers University, New Brunswick. I'm passionate about technology and aspire to contribute my skills to projects that create a tangible impact.
+                  Hello, I'm a Computer Science and Mathematics double-major student at Rutgers University, New Brunswick. I'm passionate about technology and aspire to contribute to projects that create a tangible impact.
                 </p>
                 <p className="profile-description">
                   <br/>At Rutgers, I'm a part of the Honors College, IDEA, USACS, the Sailing Team, and Habitat for Humanity. I enjoy meeting new people and exploring courses in interesting topics like cosmology, psychology, and philosophy. 
