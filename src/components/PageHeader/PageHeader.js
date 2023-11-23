@@ -33,15 +33,15 @@ export default function PageHeader() {
         <div className="squares square7" />
         <Container>
           <div className="content-center brand">
-            <h1 className="h1-seo">Hi, I'm Terry👋🏼</h1>
-            <h3>
-              CS & Math - Rutgers University
+            <h1 className="h1-seo" style={{ fontSize: '400%' }}>Hi, I'm Terry👋🏼</h1>
+            <h3 style={{ fontSize: '170%', textTransform: 'none' }}>
+              CS & Math Student at Rutgers University
             </h3>
             <Button
               color="secondary"
               href=""
             >
-              About Me
+              More About Me
             </Button>
           </div>
         </Container>

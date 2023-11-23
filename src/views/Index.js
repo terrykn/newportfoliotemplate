@@ -78,7 +78,18 @@ export default function Index() {
               <Col lg="6" md="6">
                 <h1 className="profile-title text-left">Terry Nguyen</h1>
                 <p className="profile-description">
-                  stuff about me
+                  Hello, I'm a Computer Science and Mathematics double-major student at Rutgers University, New Brunswick. I'm passionate about technology and aspire to contribute my skills to projects that create a tangible impact. 
+                </p>
+                <p className="profile-description">
+                  <br/>At Rutgers, I'm a part of the Honors College, IDEA, USACS, the Sailing Team, and Habitat for Humanity. I enjoy meeting new people and exploring courses in interesting topics like cosmology, psychology, and philosophy. 
+                </p>
+                <p className="profile-description">
+                  <br/>Outside of the classroom, I'm an avid traveler, seafood lover, and amateur photographer. I like to take road trips with my family and go swimming at beaches. 🏖️
+                </p>
+                <br/>
+                <p className="profile-description">
+                ✈️ Dual citizen of US and Vietnam <br/>
+                🎻 Violin and piano player
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
@@ -128,9 +139,14 @@ export default function Index() {
 
       {/* PROJECTS */}
       <div className="section">
-        <Container>
+        <Container style={{ marginBottom: '50px' }}>
           <Row className="justify-content-between">
-            <Col md="6">
+            <Col md="3">
+              <Row className="justify-content-between align-items-center">
+                <UncontrolledCarousel items={carouselItems} />
+              </Row>
+            </Col>
+            <Col md="3">
               <Row className="justify-content-between align-items-center">
                 <UncontrolledCarousel items={carouselItems} />
               </Row>
@@ -138,26 +154,28 @@ export default function Index() {
             <Col md="5">
               <h1 className="profile-title text-left">Projects</h1>
               <p className="profile-description text-left">
-                blablabla
+                Check out a few of my recent projects!
               </p>
-              <div className="btn-wrapper pt-3">
-                <Button
-                  className="btn-simple"
-                  color="primary"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="tim-icons icon-book-bookmark" /> Bookmark
-                </Button>
-                <Button
-                  className="btn-simple"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="tim-icons icon-bulb-63" /> Check it!
-                </Button>
-              </div>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row className="justify-content-between">
+            <Col md="3">
+              <Row className="justify-content-between align-items-center">
+                <UncontrolledCarousel items={carouselItems} />
+              </Row>
+            </Col>
+            <Col md="3">
+              <Row className="justify-content-between align-items-center">
+                <UncontrolledCarousel items={carouselItems} />
+              </Row>
+            </Col>
+            <Col md="5">
+              <h1 className="profile-title text-left">Hackathons</h1>
+              <p className="profile-description text-left">
+                Hackathon projects I'm proud of 😀
+              </p>
             </Col>
           </Row>
         </Container>
