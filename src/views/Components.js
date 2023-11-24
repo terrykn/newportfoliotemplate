@@ -35,7 +35,7 @@ import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
 import Download from "views/IndexSections/Download.js";
 
-export default function Index() {
+export default function Components() {
   React.useEffect(() => {
     document.body.classList.toggle("index-page");
     return function cleanup() {
